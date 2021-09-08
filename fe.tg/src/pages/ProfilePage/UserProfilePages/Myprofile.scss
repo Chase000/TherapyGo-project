@@ -1,0 +1,22 @@
+.profile {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: #f1f5f9;
+  &__top {
+    flex: 1.5;
+  }
+  &__body {
+    flex: 8.5;
+    flex-direction: column;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    overflow: auto;
+  }
+  & h1 {
+    font-size: calc(20px + 0.7vw);
+    margin-top: 2rem;
+    text-align: center;
+  }
+}

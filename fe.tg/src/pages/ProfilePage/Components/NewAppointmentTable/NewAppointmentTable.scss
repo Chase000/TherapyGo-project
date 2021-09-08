@@ -1,0 +1,17 @@
+.new-appointment {
+    width: 90%;
+    margin-top: 3rem;
+    flex: 1;
+    overflow: auto;
+}
+.table-footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 2rem;
+    h3 {
+        font-size: 24px;
+    }
+}

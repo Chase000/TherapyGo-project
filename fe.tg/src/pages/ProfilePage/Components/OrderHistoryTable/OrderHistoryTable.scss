@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+
+.order-history {
+    font-family: 'Quicksand', sans-serif;
+    width: 90%;
+    margin-top: 3rem;
+    flex:1;
+    overflow: auto;
+}
+
+@media (max-width: 900px) {
+    .order-history {
+        width: 100%;
+        flex:1;
+        overflow: auto;
+    }
+}

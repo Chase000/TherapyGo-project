@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+
+.page_404 {
+  background: #fff;
+  font-family: 'Quicksand', sans-serif;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  &__background {
+    background-image: url(https://cdn.dribbble.com/users/285475/screenshots/2083086/dribbble_1.gif);
+    height: 420px;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+    h1 {
+      font-size: calc(60px + 0.7vw);
+    }
+  }
+}
+.content-box {
+  text-align: center;
+  font-family: 'Quicksand', sans-serif;
+  line-height: 3rem;
+  padding: 0.5rem;
+  margin-top: -2rem;
+  h3 {
+    font-size: calc(28px + 0.7vw);
+  }
+  p {
+    font-size: calc(15px + 0.7vw);
+  }
+  &__home {
+    color: #fff !important;
+    padding: 1rem 1rem;
+    background: #39ac31;
+    border-radius: 0.5rem;
+  }
+}
+
+@media (max-width: 320px) {
+  .page_404 {
+    &__background {
+      h1 {
+        font-size: calc(50px + 0.7vw);
+      }
+    }
+  }
+  .content-box {
+    h3 {
+      font-size: calc(18px + 0.7vw);
+      margin: 0;
+    }
+    p {
+      font-size: calc(10px + 0.7vw);
+      margin: 0;
+    }
+    &__home {
+      padding: 0.8rem 0.8rem;
+    }
+  }
+}
+
+@media (max-width: 896px) and (max-height: 414px) and (orientation: landscape) {
+  .page_404 {
+    &__background {
+      background-size: 100%;
+      h1 {
+        font-size: calc(40px + 0.7vw);
+      }
+    }
+  }
+  .content-box {
+    line-height: 2rem;
+    h3 {
+      font-size: calc(10px + 0.7vw);
+      margin: 0;
+    }
+    p {
+      font-size: calc(5px + 0.7vw);
+      margin: 0;
+    }
+    &__home {
+      padding: 0.5rem 0.5rem;
+      font-size: calc(5px + 0.7vw);
+    }
+  }
+}

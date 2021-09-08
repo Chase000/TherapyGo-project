@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+
+.home {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background: #f1f5f9;
+  font-family: 'Quicksand', sans-serif;
+  &__top {
+    flex: 1.5;
+    padding-top: 2rem;
+  }
+}
+main {
+  flex: 8.5;
+  padding: 1rem 3rem;
+}
+
+.dash-title {
+  color: var(--color-dark);
+  margin-bottom: 1rem;
+}
+.dash-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 3rem;
+}
+.card-single {
+  background: #fff;
+  border-radius: 7px;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+}
+.userProfile-card-body {
+  padding: 1.3rem 1rem;
+  display: flex;
+  align-items: center;
+  span {
+    font-size: 1.5rem;
+    color: #777;
+    padding-right: 1.4rem;
+  }
+  h5 {
+    color: var(--text-grey);
+    font-size: 1rem;
+  }
+  h4 {
+    color: var(--color-dark);
+    font-size: 1.1rem;
+    margin-top: 0.2rem;
+  }
+}
+.card-footer {
+  padding: 0.2rem 1rem;
+  background: #f9fafc;
+  a {
+    color: var(--main-color);
+  }
+}
+.recent {
+  margin-top: 1.3rem;
+}
+.activity-grid {
+  display: grid;
+  grid-template-columns: 70% 25%;
+  grid-column-gap: 5%;
+}
+.activity-card {
+  background: #fff;
+  border-radius: 7px;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+  h3 {
+    color: var(--text-grey);
+    margin: 1rem;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  thead {
+    background: #efefef;
+    text-align: left;
+  }
+}
+.summary-card {
+  background: #fff;
+  border-radius: 7px;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+  margin-bottom: 1.5rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+}
+.bday-card {
+  background: #fff;
+  border-radius: 7px;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+  padding: 1rem;
+}
+th {
+  font-size: 0.9rem;
+  padding: 1rem 1rem;
+  color: var(--color-dark);
+}
+td {
+  font-size: 0.9rem;
+  padding: 1rem 1rem;
+  color: var(--color-dark);
+  font-size: 0.8rem;
+}
+tbody {
+  tr {
+    &:nth-child(even) {
+      background: #f9fafc;
+    }
+  }
+}
+.badge {
+  padding: 0.2rem 1rem;
+  border-radius: 20px;
+  font-weight: 700;
+  font-size: 0.7rem;
+}
+.badge.success {
+  background: #def7ec;
+  color: var(--main-color);
+}
+.badge.warning {
+  background: #f0f6b2;
+  color: orange;
+}
+.td-team {
+  display: flex;
+  align-items: center;
+}
+.img-1 {
+  height: 38px;
+  width: 38px;
+  border-radius: 50%;
+  margin-left: -15px;
+  border: 3px solid #efefef;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.img-2 {
+  height: 38px;
+  width: 38px;
+  border-radius: 50%;
+  margin-left: -15px;
+  border: 3px solid #efefef;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.img-3 {
+  height: 38px;
+  width: 38px;
+  border-radius: 50%;
+  margin-left: -15px;
+  border: 3px solid #efefef;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.summary-single {
+  padding: 0.5rem 1rem;
+  display: flex;
+  align-items: center;
+  span {
+    font-size: 1.5rem;
+    color: #777;
+    padding-right: 1rem;
+  }
+  h5 {
+    color: var(--main-color);
+    font-size: 1.1rem;
+    margin-bottom: 0rem !important;
+  }
+  small {
+    font-weight: 700;
+    color: var(--text-grey);
+  }
+}
+.bday-flex {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem;
+}
+.bday-img {
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  border: 3px solid #efefef;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url(../../../assets/images/2.jpg);
+  margin-right: 0.7rem;
+}
+.text-center {
+  text-align: center;
+  button {
+    background: var(--main-color);
+    color: #fff;
+    border: 1px solid var(--main-color);
+    border-radius: 4px;
+    padding: 0.4rem 1rem;
+  }
+}
+.table-responsive {
+  overflow-x: auto;
+}
+@media (max-width: 900px) {
+  .home {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    &__top {
+      flex: 1.5;
+    }
+  }
+  &__body {
+    flex: 8.5;
+    padding: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+}

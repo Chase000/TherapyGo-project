@@ -1,0 +1,20 @@
+.SeparationLineContainer{
+  display: block;
+  width: 100%;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  & hr{
+    clear: both;
+    border: 0px;
+    width: 100%;
+    height: 1px;
+    background-image: linear-gradient(to right, 
+    rgba(197, 197, 197, 0), 
+    rgba(218, 218, 218, 0.3) 20%,
+    rgba(218, 218, 218, 0.70) 40%,
+    rgba(218, 218, 218, 0.70) 60%, 
+    rgba(218, 218, 218, 0.70) 80%, 
+    rgba(197, 197, 197, 0)
+    );
+  }
+}

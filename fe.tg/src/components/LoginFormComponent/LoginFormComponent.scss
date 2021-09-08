@@ -1,0 +1,48 @@
+$mainColor: #73d6ca;
+.formbox {
+  height: 100%;
+  width: 100%;
+  padding: 0px;
+  margin: 0px;
+}
+.login__form {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.form__Container {
+  width: 100%;
+  height: 60%;
+  margin-top: 3%;
+}
+
+#login-form__submit {
+  background-color: $mainColor;
+  border: 1px solid #c5c5c5;
+  margin-top: 1rem;
+  color: #ffffff;
+  text-align: center;
+  text-decoration: none;
+  font-size: 18px;
+  cursor: pointer;
+  box-sizing: border-box;
+  border-radius: 0.5em;
+  width: 6rem;
+  height: 40px;
+}
+
+#login-form__link {
+  color: #73d5ca;
+  display: block;
+  margin-top: 10px;
+  width: max-content;
+}
+
+@media (max-width: 320px) {
+  #login-form__submit {
+    margin-top: 0.5rem;
+  }
+}

@@ -1,0 +1,48 @@
+$mainColor: #027581;
+.profile-page{
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    overflow: hidden;
+    &__big-navbar{
+        width: 12%;
+        background-color: $mainColor;
+    }
+    &__body{
+        width: 88%;
+    }
+    &__full-body{
+        width: 96%;
+    }
+    &__small-navbar{
+        width: 4%;
+        background-color:$mainColor;
+    }
+}
+@media (max-width: 900px) {
+    .profile-page{
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        &__big-navbar{
+            height: 10%;
+            width: 100%;
+            background-color: $mainColor;
+        }
+        &__body{
+            height: 90%;
+            width: 100%;
+        }
+        &__full-body{
+            height: 90%;
+            width: 100%;
+        }
+        &__small-navbar{
+            height: 10%;
+            width: 100%;
+            background-color:$mainColor;
+        }
+    }
+}
+  
+  

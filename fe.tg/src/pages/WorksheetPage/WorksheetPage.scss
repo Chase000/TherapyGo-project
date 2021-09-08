@@ -1,0 +1,81 @@
+.flexCenter {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.flexSpaceEve {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.flexRowSpBe {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.worksheetPageContainer {
+  height: 90.9vh;
+  width: 100vw;
+  &-navigationBar {
+    width: 100%;
+    height: 10%;
+  }
+  &-content {
+    background-color: #c6eadd;
+    width: 100%;
+    height: 100%;
+    &__dateBar {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #ffffff;
+      height: 6%;
+      width: 95%;
+      border-radius: 0.5em;
+      overflow: hidden;
+      &__date {
+        width: 50%;
+      }
+      &__searchbar {
+        width: 50%;
+      }
+    }
+    &__worksheetPart {
+      height: 90%;
+      width: 95%;
+      border-radius: 0.5em;
+      &--leftBox {
+        height: 100%;
+        width: 25%;
+        border-radius: 0.5em;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        &__calenderBox {
+          padding-right: 0.5rem;
+          padding-left: 0.5rem;
+          background-color: #ffffff;
+          width: 100%;
+          height: 40%;
+          border-radius: 0.5em;
+        }
+        &__staff {
+          width: 100%;
+          height: 58%;
+        }
+      }
+      &--rightBox {
+        display: flex;
+        align-items: flex-end;
+        height: 100%;
+        width: 75%;
+        overflow: hidden;
+      }
+    }
+  }
+}

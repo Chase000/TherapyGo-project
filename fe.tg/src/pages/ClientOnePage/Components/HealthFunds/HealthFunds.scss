@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+
+.health-fund {
+  text-align: center;
+  background-color: #f5f5f5;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-bottom: 5vmax;
+  justify-content: center;
+  font-family: 'Quicksand', sans-serif;
+  & h1 {
+    padding-top: 5vmax;
+    font-size: calc(20px + 0.7vw);
+    margin-bottom: 0rem;
+  }
+  & h2 {
+    color: #73d6ca;
+    font-size: calc(15px + 0.7vw);
+    padding-top: 2rem;
+  }
+  & p {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    font-size: calc(10px + 0.7vw);
+  }
+  &__photo {
+    width: 50%;
+    height: 50%;
+    min-width: 250px;
+    min-height: 300px;
+    border-radius: 0.5rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  .health-fund {
+    &__photo {
+      width: 80%;
+      height: 50%;
+      border-radius: 0.5rem;
+    }
+  }
+}

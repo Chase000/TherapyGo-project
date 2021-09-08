@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+$mainColor: #73d6ca;
+
+html {
+  background-color: #f5f5f5;
+}
+
+.main {
+  height: 100vh;
+  width: 70vw;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  &__left {
+    background-color: #ffffff;
+    width: 33%;
+    height: 80%;
+    border-radius: 0.9rem;
+    box-shadow: 0px 15px 25px 0px rgba(0, 0, 0, 0.1);
+    background-image: url(../../assets/images/LoginBackground.jpg);
+    background-size: cover;
+  }
+  &__right {
+    background-color: #ffffff;
+    width: 56%;
+    height: 90%;
+    border-radius: 0.9rem;
+    box-shadow: 0px 15px 25px 0px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    min-height: 33.75rem;
+    &__top {
+      height: 30%;
+      margin-top: 5%;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      align-items: center;
+      & img {
+        height: 30%;
+        width: auto;
+      }
+      & h1 {
+        margin: 0;
+        font-family: 'Quicksand', sans-serif;
+        font-size: 2rem;
+        font-weight: 500;
+        padding-top: 1vw;
+      }
+      & h4 {
+        margin: 0;
+        font-family: 'Quicksand', sans-serif;
+        font-size: 1rem;
+        font-weight: 300;
+        padding-top: 1hw;
+      }
+    }
+  }
+}
+.form {
+  background-color: #ffffff;
+  height: 65%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  &__button {
+    width: 100%;
+    height: 8%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    & button {
+      height: 100%;
+      margin: 0 0.5rem;
+      border-radius: 0.4rem;
+      border-color: #c5c5c5;
+      border-style: solid;
+      border-width: 1px;
+      background-color: #ffffff;
+      color: #c5c5c5;
+      font-family: 'Quicksand', sans-serif;
+      font-size: 1.2rem;
+      font-weight: 350;
+      box-shadow: none;
+      outline: none;
+      cursor: pointer;
+      &:hover {
+        border-color: $mainColor;
+        color: $mainColor;
+        font-size: 1.3rem;
+        transition: 0.3s ease-in-out;
+      }
+      &:visited {
+        background-color: $mainColor;
+        color: #ffffff;
+      }
+      &:active {
+        transform: translateY(5px);
+      }
+    }
+  }
+  &__input {
+    width: 50%;
+    height: 89%;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.current {
+  background-color: $mainColor !important;
+  color: #ffffff !important;
+  font-size: 1.3rem !important;
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.1) !important;
+}
+
+.register-buttons {
+  display: flex;
+  justify-content: space-around;
+}
+
+.forget-password {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 3rem;
+  h3 {
+    font-family: 'Quicksand', san-serif;
+    text-align: center;
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1% 15%;
+  }
+}
+
+@media (max-width: 1024px) {
+  .main {
+    width: 100vw;
+    &__right {
+      &__top {
+        & img {
+          height: 30%;
+          width: auto;
+        }
+        & h1 {
+          font-size: 2.8rem;
+        }
+        & h4 {
+          font-size: 1.8rem;
+        }
+      }
+    }
+    .current {
+      font-size: 1.5rem !important;
+    }
+  }
+  .form {
+    &__button {
+      & button {
+        font-size: 1.5rem;
+        &:hover {
+          font-size: 1.5rem;
+        }
+      }
+    }
+    &__input {
+      width: 50%;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .main {
+    width: 100vw;
+    justify-content: center;
+    &__right {
+      &__top {
+        height: 30%;
+        & img {
+          height: 30%;
+          width: auto;
+        }
+        & h1 {
+          font-size: 2rem;
+        }
+        & h4 {
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 414px) {
+  .main {
+    &__right {
+      width: 80%;
+    }
+  }
+  .form {
+    &__input {
+      width: 100%;
+      height: 89%;
+      display: flex;
+      justify-content: center;
+    }
+  }
+}
+
+@media (max-width: 375px) {
+  .main {
+    &__right {
+      width: 80%;
+    }
+  }
+  .form {
+    margin: 1rem 0 !important;
+    padding: 0 !important;
+    height: 80%;
+    &__input {
+      width: 80%;
+      height: 60%;
+      display: flex;
+      justify-content: center;
+    }
+  }
+  .register-buttons {
+    display: flex;
+    justify-content: space-around;
+  }
+}

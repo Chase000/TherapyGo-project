@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+@import '../../../node_modules/bootstrap/scss/bootstrap';
+
+.mainNavBar {
+  background-color: #ffffff !important;
+  max-width: 1920px;
+  min-width: 600px;
+  font-family: 'Quicksand', san-serif;
+  font-size: calc(8px + 1vw) !important;
+  justify-content: space-between !important;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  background-color: black;
+  &__logo {
+    width: 20%;
+    min-width: 50px;
+    height: 15%;
+    min-height: 30px;
+    margin: 0.2em;
+  }
+  &__company-name {
+    font-size: calc(12px + 1.5vw) !important;
+    width: 20%;
+    display: flex;
+    align-items: flex-end;
+  }
+  &__navBar {
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  &__navIsCurrent {
+    border-bottom: 3px solid black;
+    font-weight: bold;
+    color: black !important;
+  }
+  &__notification {
+    padding-right: 1rem;
+    max-height: 500px;
+    overflow: scroll;
+  }
+  &__status {
+    width: 1rem;
+    height: 1rem;
+    border-radius: 0.5rem;
+    margin-left: 0.7rem;
+    background-color: #2979ff;
+  }
+  &__mark-all {
+    padding: 1rem;
+    display: flex;
+    justify-content: flex-end;
+    background: none !important;
+    border: none;
+    color: #2979ff;
+  }
+  &__see-all {
+    padding-bottom: 0.5rem;
+    display: flex;
+    justify-content: center;
+  }
+  &__logOutButton {
+    justify-content: flex-end !important;
+  }
+}
+
+.MuiList-padding {
+  display: flex;
+  flex-direction: column;
+}

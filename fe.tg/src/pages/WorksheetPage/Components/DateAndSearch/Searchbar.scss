@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+$mainColor: #73d6ca;
+
+.searchbar {
+  display: flex;
+  position: relative;
+  width: 40%;
+  height: 60%;
+  &__icon {
+    position: absolute;
+    top: 23%;
+    left: 2%;
+    height: 60%;
+    width: auto;
+  }
+  &__input {
+    font-size: 2vh;
+    width: 95%;
+    border-radius: 12px;
+    height: 100%;
+    padding: 1vh 1vw 1vh 5vw;
+    outline: 0;
+    background-color: #f5f5f5;
+    border: none;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 300;
+  }
+}

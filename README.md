@@ -1,5 +1,5 @@
 # TherapyGo-project
-#customer: account: cfangzheng@gmail.com 
+# customer: account: cfangzheng@gmail.com 
           password: 1234567
 #admin: account: charleshou920@gmail.com
        password: 1234567
